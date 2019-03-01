@@ -12,5 +12,8 @@
     "explanation"
   ],
   "author": "AndrewBeletskiy",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "quartet": "^7.0.4"
+  }
 }
