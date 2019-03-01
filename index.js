@@ -141,7 +141,7 @@ const renderFunctionSchemaToExplanation = (
   return renderer ? renderer(value, schema, ...path) : undefined;
 };
 
-export const defaultExplanation = (value, schema, ...path) => {
+const defaultExplanation = (value, schema, ...path) => {
   if (path.length === 0) return `value is not ${schemaToString(schema)}`;
 
   if (typeof schema === "string")
@@ -151,4 +151,4 @@ export const defaultExplanation = (value, schema, ...path) => {
   return undefined;
 };
 
-module.exports = { v: quartet({ defaultExplanation }) }
+module.exports = { v: quartet({ defaultExplanation }), defaultExplanation }
