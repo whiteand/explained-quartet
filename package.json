@@ -1,6 +1,6 @@
 {
   "name": "explained-quartet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "instance of quartet with default explanations",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,6 @@
   "author": "AndrewBeletskiy",
   "license": "MIT",
   "dependencies": {
-    "quartet": "^7.0.4"
+    "quartet": "latest"
   }
 }
