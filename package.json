@@ -1,6 +1,6 @@
 {
   "name": "explained-quartet",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "instance of quartet with default explanations",
   "main": "index.js",
   "scripts": {
