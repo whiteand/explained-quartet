@@ -1,5 +1,5 @@
 const getPath = require('./getPath')
-
+const schemas = []
 const schemaToObj = schema => {
   if (typeof schema === 'object' || typeof schema === 'string') {
     return schema
@@ -15,8 +15,12 @@ const schemaToObj = schema => {
 
 module.exports = (value, schema, ...parents) => {
   const path = getPath(parents)
+  const id = schemas.includes(schema) ? schemas.indexOf(schema) : schemas.length
+  schemas.push(schema)
   return {
+    id,
     value,
-    ['invalidValue'+(path && '.'+path)]: schemaToObj(schema),
+    path: 'invalidValue'+(path && '.'+path),
+    schema: schemaToObj(schema),
   }
 }

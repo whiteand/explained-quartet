@@ -105,4 +105,8 @@ declare interface Compiler {
 }
 
 declare function newCompiler(settings?: CompilerSettings): Compiler
-export default newCompiler
+
+export const v: Compiler
+export const obj: Compiler
+export const stringExplanation: Explanation
+export const objExplanation: Explanation 
